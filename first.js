@@ -1,7 +1,7 @@
 const fs=require('fs')
-const content ='some content';
-fs.appendFile('file.log',content,err=>{
-    console.log('asdfdsaASDFD')
+const content ='var a=some';
+fs.appendFile('file.js',content,err=>{
+    console.log('Hello world')
     if(err){
         console.error(err);
     }
