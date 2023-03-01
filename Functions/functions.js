@@ -1,9 +1,6 @@
-
 //variable var let const
 
-
 //imports 
-
 
 const helpers=require("./function1");
 
