@@ -15,3 +15,15 @@ function final(someInput, callback) {
   
   initiate();
   
+
+  // var b;
+
+  // function a(){
+  //   console.log("jhvkk")
+  //   this.b="hello"
+  // }
+  // console.log("first",this.b);
+
+  // a();
+
+  // console.log("second",this.b)

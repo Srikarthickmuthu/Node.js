@@ -1,3 +1,5 @@
+const { serialize } = require("v8");
+
 const operations = [
     { func: function1, args: args1 },
     { func: function2, args: args2 },
