@@ -2,18 +2,18 @@ let count = 0;
 let success = 0;
 const failed = [];
 const recipients = [
-  { name: 'Bart', email: 'bart@tld' },
-  { name: 'Marge', email: 'marge@tld' },
-  { name: 'Homer', email: 'homer@tld' },
-  { name: 'Lisa', email: 'lisa@tld' },
-  { name: 'Maggie', email: 'maggie@tld' },
+  { name: "Bart", email: "bart@tld" },
+  { name: "Marge", email: "marge@tld" },
+  { name: "Homer", email: "homer@tld" },
+  { name: "Lisa", email: "lisa@tld" },
+  { name: "Maggie", email: "maggie@tld" },
 ];
 
 function dispatch(recipient, callback) {
   sendMail(
     {
-      subject: 'Dinner tonight',
-      message: 'We have lots of cabbage on the plate. You coming?',
+      subject: "Dinner tonight",
+      message: "We have lots of cabbage on the plate. You coming?",
       smtp: recipient.email,
     },
     callback
@@ -25,7 +25,7 @@ function final(result) {
       & ${result.success} succeeded emails`);
   if (result.failed.length)
     console.log(`Failed to send to: \
-        \n${result.failed.join('\n')}\n`);
+        \n${result.failed.join("\n")}\n`);
 }
 
 recipients.forEach(function (recipient) {

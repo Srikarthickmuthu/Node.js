@@ -1,12 +1,12 @@
 var http=require('http')
 var cluster=require('cluster')
-const numCpu=require('os').cpus().length;       //returns the number of cpu cores
+const numCpu=require('os').cpus().length;
 
 if(cluster.isMaster){
     console.log("Master Process id is : ",process.pid);
     for(let i=0;i<numCpu;i++)
     {
-        cluster.fork();         //create a child process/worker
+        cluster.fork();
     }
     cluster.on('exit',(worker)=>{
         console.log(worker.process.pid," -Worker died");

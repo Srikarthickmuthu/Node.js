@@ -2,14 +2,14 @@ let successCount = 0;
 
 function final() {
   console.log(`dispatched ${successCount} emails`);
-  console.log('finished');
+  console.log("finished");
 }
 
 function dispatch(recipient, callback) {
   sendMail(
     {
-      subject: 'Dinner',
-      message: 'hello this is the message',
+      subject: "Dinner",
+      message: "hello this is the message",
       smtp: recipient.email,
     },
     callback
