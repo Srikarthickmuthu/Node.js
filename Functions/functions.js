@@ -17,3 +17,4 @@ console.log("arrow_multiple",multiple);
 const { sum }=require("./function1")
 
 console.log("Object destruturing Sum :" ,sum(10,20));
+

@@ -1,17 +1,14 @@
-function sum(a,b){
-    return a+b;
+function sum(a, b) {
+  return a + b;
 }
 
 //arrow function
 
-const multiple = (a,b)=>{
-
-    return a*b;
-    
-}
-
-module.exports={
-    sum , multiple
+const multiple = (a, b) => {
+  return a * b;
 };
 
-console.log("process",process)
+module.exports = {
+  sum,
+  multiple,
+};
