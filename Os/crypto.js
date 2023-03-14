@@ -7,4 +7,4 @@ const hash = crypto
   .update("password")
   .digest("hex");
 
-console.log(hash);
+console.log("Encoded data : ",hash);
